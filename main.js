@@ -1,6 +1,4 @@
-import './css/style.css'
-import cipher from './js/cipher'
-
+import cipher from './cipher.js';
 
 // Encryption
 let originalInput =  document.querySelector('#encryptOriginal')

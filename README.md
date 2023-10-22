@@ -1,6 +1,6 @@
 # Encrypt/Decrypt App
 
-This is a simple command-line application that allows you to encrypt and decrypt text using a secret key.
+This is a simple user interface application that allows you to encrypt and decrypt text using a secret key.
 
 ## Installation
 
