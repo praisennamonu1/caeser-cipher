@@ -1,0 +1,86 @@
+html {
+  --dark: #222;
+  --gray: #D8D8D8;
+  --white: #FFF;
+  --darkGray: #A2A2A2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(45deg, rgba(245,70,66, 0.75), rgba(8,83,156, 0.75));
+  min-height: 100vh;
+}
+
+#welcome, #encrpyt, #decrypt {
+  background: #fff;
+  width: 90%;
+  max-width: 700px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding:30px;
+  transition: all 0.3s ease-in-out;
+}
+
+#welcome > h1, #encrpyt > h1, #decrypt > h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+button {
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+}
+
+button:hover {
+  background: #fff;
+  color: #001e4d;
+  border: 1px solid #001e4d;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #222;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+label {
+  margin: 20px;
+  color: var(--darkGray);
+}
+
+hr {
+  border: 1px solid rgba(8,83,156, 0.75);
+  margin: 30px 0px;
+}
+
+#encrpyt, #decrypt {
+  display: none;
+}
+
+#encoded, #decoded {
+  border-color: var(--dark);
+  background-color: var(--dark);
+  color: var(--white);
+}

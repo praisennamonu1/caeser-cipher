@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preno's Cipher App</title>
+  </head>
+  <body>
+    <div id="welcome">
+      <h1>Welcome To Ceaser's Cipher</h1>
+      <p>What do you want to <span>Do?</span></p>
+
+      <hr>
+
+      <div id="buttons">
+        <button class="encrypt">Encrypt</button>
+        <button class="decrypt">Decrypt</button>
+      </div>
+    </div>
+    
+    <div id="encrpyt">
+      <h1>Encrypt a message</h1>
+      <label for="encryptOriginal">Message to Encrypt</label>
+      <input type="text" name="original" id="encryptOriginal" value="" placeholder="Input text to encrypt">
+
+      <label for="encryptShift">Shift by:</label>
+      <input type="number" id="encryptShift" value="" placeholder="0">
+
+      <hr>
+
+      <label for="encoded">Encrypted Message</label>
+      <input type="text" name="encoded" id="encoded" value="" readonly>
+
+      <hr>
+
+      <button class="back">Go Back</button>
+    </div>
+
+    <div id="decrypt">
+      <h1>Decrypt a message</h1>
+      <label for="decryptOriginal">Message to Decrypt</label>
+      <input type="text" name="original" id="decryptOriginal" value="" placeholder="Input text to decrypt ">
+
+      <label for="decryptShift">Shift by:</label>
+      <input type="number" id="decryptShift" value="" placeholder="0">
+
+      <hr>
+
+      <label for="decoded">Decrypted Message</label>
+      <input type="text" name="decoded" id="decoded" value="" readonly>
+
+      <hr>
+
+      <button class="back">Go Back</button>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
